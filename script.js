@@ -1,4 +1,4 @@
-const apiKey = 'YOUR_API_KEY'; // Replace with your API key from spoonacular
+const apiKey = 'YOUR_API_KEY';
 const searchButton = document.getElementById('search-button');
 const ingredientInput = document.getElementById('ingredent-input');
 const recipeList = document.getElementById('recipe-list');
@@ -29,7 +29,7 @@ function fetchRecipes(ingredients) {
 }
 
 function displayRecipes(recipes) {
-  recipeList.innerHTML = ''; // Clear previous results
+  recipeList.innerHTML = '';
   recipes.forEach(recipe => {
     const recipeCard = document.createElement('div');
     recipeCard.classList.add('recipe-card');
